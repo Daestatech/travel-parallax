@@ -15,19 +15,19 @@ body, html {
 }
 
 .img-1 {
-  background-image: url('../img/australia.png');
+  background-image: url('../img/Lagoa1.jpg');
 }
 
 .img-2 {
-  background-image: url('../img/korea.png');
+  background-image: url('../img/Lagoa_Curso.jpg');
 }
 
 .img-3 {
-  background-image: url('../img/taiwan.png');
+  background-image: url('../img/Lagoa_Pista_Curral.jpg');
 }
 
 .img-4 {
-  background-image: url('../img/france.png');
+  background-image: url('../img/Museu_Engenhoca_Pequena.jpg');
 }
 
 .static {
@@ -90,4 +90,23 @@ h3 {
   .content {
     padding: 50px 5px;
   }
+}
+
+.linha{
+	width: 960px;
+	margin: 0 auto;
+	overflow: auto;
+	padding: 5px 0;
+}
+
+.col12{
+	width: 940px;
+}
+
+.footer{
+	background: #1f3c58;
+	color: #ebebeb;
+	padding: 20px 0;
+	text-align: center;
+	font-weight: 100;
 }
