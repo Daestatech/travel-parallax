@@ -36,14 +36,28 @@ nav {
   sans-serif;
   background: #23232e;
   height: 8vh;
+  width: 1519px;
 }
 
-/*+main {
-  background: url("bg.jpg") no-repeat
-  center center;
-  background-size: cover;
-  height: 40vh; 
-}*/
+main {
+   width: 1519px;
+}
+
+section.img-1 {
+  width: 1519px;
+}
+
+section.img-2 {
+  width: 1519px;
+}
+
+section.img-3 {
+  width: 1519px;
+}
+
+section.img-4 {
+  width: 1519px;
+}
 
 .nav-list {
   list-style: none;
@@ -67,13 +81,40 @@ nav {
   margin: 8px;
 }
 
+
+.linha{
+	width: 960px;
+	margin: 0 auto;
+	overflow: auto;
+	padding: 5px 0;
+}
+
+.col12{
+	width: 960px;
+}
+
+.footer{
+	background: #1f3c58;
+	color: #ebebeb;
+	padding: 12px 0;
+	text-align: center;
+	font-weight: 100;
+  width: 1519px;
+}
+
 @media (max-width: 999px) {
   body {
-    overflow-x: hidden;
+    overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    width: 1519px;
   }
 
   .nav-list {
-    position: absolute;
+    position: fixed;
     top: 8vh;
     right: 0;
     width: 50vw;
@@ -83,11 +124,12 @@ nav {
     align-items: center;
     justify-content: space-around;
     transform: translateX(100%);
+    transition: transform 0.3s ease-in;
   }
   
   .nav-list li {
     margin-left: 0;
-    opacity: 0;
+    opacity: 100;
   }
 
   .mobile-menu {
@@ -99,9 +141,23 @@ nav {
   transform: translateX(0);
 }
 
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 body, html {
   font-family: sans-serif;
   margin: 0;
+}
+
+.nav {
+  width: 100%;
 }
 
 .img-1, .img-2, .img-3, .img-4 {
@@ -153,7 +209,7 @@ h1 {
   padding: 20px 20px 20px 28px;
   position: absolute;
   right: 0;
-  text-align: center;
+  text-align: flex;
   text-transform: uppercase;
   top: 50%;
   width: intrinsic;
@@ -171,7 +227,13 @@ h3 {
 @media screen and (max-width: 1030px) {
   .img-1, .img-2, .img-3, .img-4 {
     background-attachment: scroll;
+    width: 1020px;
   }
+
+  /*nav {
+    width: 1020px;
+  }/*
+  
 }
 
 @media screen and (max-width: 420px) {
@@ -179,35 +241,63 @@ h3 {
     font-size: 35px;
     letter-spacing: 5px;
     padding: 10px;
+    width: 410px;
   }
+
+  nav {
+    width: 1020px;
+  }
+  
   h3 {
     font-size: 18px;
     text-align: center;
   }
+
   p {
     line-height: 1.5em;
     text-align: center;
   }
+
   .content {
     padding: 50px 5px;
   }
+
+  .footer {
+    width: 410px;
+  }
 }
 
-.linha{
-	width: 960px;
-	margin: 0 auto;
-	overflow: auto;
-	padding: 5px 0;
-}
+@media screen and (max-width: 375px) {
+  main {
+    width: 374px;
+  }
 
-.col12{
-	width: 940px;
-}
+  h1 {
+    font-size: 35px;
+    letter-spacing: 5px;
+    padding: 10px;
+    width: 374px;
+  }
 
-.footer{
-	background: #1f3c58;
-	color: #ebebeb;
-	padding: 20px 0;
-	text-align: center;
-	font-weight: 100;
+  nav {
+    width: 374px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  p {
+    line-height: 1.5em;
+    text-align: center;
+  }
+
+  .content {
+    padding: 50px 5px;
+  }
+
+  .div.footer {
+    width: 374px;
+  }
 }
