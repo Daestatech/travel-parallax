@@ -294,11 +294,11 @@ h3 {
 
   .img-1 {
     display: none;
-
   }
   .content {
     padding: 50px 5px;
   }
+}
 /*
   .footer {
     width: 410px;
@@ -359,5 +359,5 @@ h3 {
   .div.footer {
     width: 374px;
   }
-  */
+ */ 
 }
