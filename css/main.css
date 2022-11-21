@@ -7,6 +7,7 @@ a {
   color: #ffff;
   text-decoration: none;
   transition: 0.3;
+  font-size: 20px;
 }
 
 a:hover {
@@ -67,6 +68,7 @@ section.img-4 {
 .nav-list li {
   letter-spacing: 3px;
   margin-left: 32px;
+  font-size: 35px;
 }
 
 .mobile-menu {
@@ -80,7 +82,6 @@ section.img-4 {
   background: #ffff;
   margin: 8px;
 }
-
 
 .linha{
 	width: 960px;
@@ -101,63 +102,10 @@ section.img-4 {
 	font-weight: 100;
   width: 1519px;
 }
-
-@media (max-width: 999px) {
-  body {
-    overflow-x: hidden; 
-    margin: 0;
-    padding: 0;
-  }
-
-  nav {
-    width: 1519px;
-  }
-
-  .nav-list {
-    position: fixed;
-    top: 8vh;
-    right: 0;
-    width: 50vw;
-    height: 92vh;
-    background: #23232e;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in;
-  }
-  
-  .nav-list li {
-    margin-left: 0;
-    opacity: 100;
-  }
-
-  .mobile-menu {
-    display: block;
-  }
-}
-
-.nav-list.active {
-  transform: translateX(0);
-}
-
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
+*/
 body, html {
   font-family: sans-serif;
   margin: 0;
-}
-
-.nav {
-  width: 100%;
 }
 
 .img-1, .img-2, .img-3, .img-4 {
@@ -166,7 +114,7 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  opacity: 0.75;
+  opacity: 0.85;
   position: relative;
   width: 100vw;
 }
@@ -201,7 +149,7 @@ body, html {
 h1 {
   background-color: #111;
   color: #fff;
-  font-size: 80px;
+  font-size: 70px;
   font-weight: 400;
   left: 0;
   letter-spacing: 10px;
@@ -219,56 +167,167 @@ h1 {
 
 h3 {
   color: #111;
-  font-size: 20px;
+  font-size:30px;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 1030px) {
-  .img-1, .img-2, .img-3, .img-4 {
-    background-attachment: scroll;
-    width: 1020px;
-  }
-
-  /*nav {
-    width: 1020px;
-  }/*
-  
-}
-
-@media screen and (max-width: 420px) {
-  h1 {
-    font-size: 35px;
-    letter-spacing: 5px;
-    padding: 10px;
-    width: 410px;
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
   }
 
   nav {
-    width: 1020px;
+    width: 1519px;
+  }
+
+  .nav-list {
+    position: fixed;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #23232e;
+    opacity: 5.5;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
   }
   
+  .nav-list li {
+    margin-left: 0;
+    opacity: 100;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+/*
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+*/
+@media screen and (max-width: 1366px) {
+ /* .img-1, .img-2, .img-3, .img-4 {
+    background-attachment: scroll;
+    width: 1365px;
+  }*/
+
+  nav {
+    width: 1349px;
+  }
+
+  main {
+    width: 1349px;
+ }
+ 
+ section.img-1 {
+   width: 1349px;
+ }
+ 
+ section.img-2 {
+   width: 1349px;
+ }
+ 
+ section.img-3 {
+   width: 1349px;
+ }
+ 
+ section.img-4 {
+   width: 1349px;
+ }
+
+ .footer {
+  width: 1349px;
+ }  
+}/*
+*/
+@media screen and (max-width: 420px) {
+  .logo {
+    font-size: 45px;
+  }
+
+  nav {
+    height: 110px;
+  }
+
+  .mobile-menu div {
+    width: 52px;
+    height: 4px;
+    background: #ffff;
+    margin: 15px;
+  }
+
+  h1 {
+    font-size: 45px;
+    letter-spacing: 5px;
+    padding: 10px;
+    width: 410px;
+    text-align: center;
+  }
+
   h3 {
-    font-size: 18px;
+    font-size: 48px;
     text-align: center;
   }
 
   p {
     line-height: 1.5em;
     text-align: center;
+    font-size: 45px;
   }
 
+  .img-1 {
+    display: none;
+
+  }
   .content {
     padding: 50px 5px;
   }
-
+/*
   .footer {
     width: 410px;
   }
 }
-
+*/
 @media screen and (max-width: 375px) {
-  main {
+  .img-1, .img-2, .img-3, .img-4 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    opacity: 0.75;
+    position: relative;
+    width: 100vw;
+  }
+  
+  .static {
+    position: relative;
+  }
+  
+  .content {
+    background-color: #fff;
+    color: #5a5a5c;
+    padding: 50px;
+    text-align: left;
+  }
+  /*main {
     width: 374px;
   }
 
@@ -300,4 +359,5 @@ h3 {
   .div.footer {
     width: 374px;
   }
+  */
 }
