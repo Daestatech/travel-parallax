@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotos</title>
+    <link rel="stylesheet" href="css/main.css" media="screen">
+    <script type="text/javascript" src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+          <a class="logo" href="/">Rancho Marken</a>
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="/">Início</a></li>
+            <li><a href="/">Sobre</a></li>
+            <li><a href="/">Fotos</a></li>
+            <li><a href="/">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+    <section id="fotos" class="flexível">
+        <article class="borda0 containerCursos" data-anima="esquerda">
+            <img src="./img/Lagoa1.jpg" class="mini" onclick="cliqueModal(this)" alt="Lagoa 1">
+            <img src="./img/Lagoa_Curso.jpg" class="mini" onclick="cliqueModal(this)" alt="Lagoa Curso 1">
+            <img src="./img/Lagoa_Curso2.jpg" class="mini" onclick="cliqueModal(this)" alt="Lagoa Curso 2">
+            <img src="./img/Lagoa_Pista.jpg" class="mini" onclick="cliqueModal(this)" alt="Lagoa Pista">
+        </article>
+        <article class="borda0 containerCursos" data-anima="centro">
+            <img src="./img/Lagoa_Pista_Curral.jpg" class="mini" onclick="cliqueModal(this)" alt="Lagoa Pista e Curral">
+            <img src="./img/Museu_Engenhoca_Pequena.jpg" class="mini" onclick="cliqueModal(this)" alt="Engenhoca Pequena">
+            <img src="./img/Museu_Radio.jpg" class="mini" onclick="cliqueModal(this)" alt="Rádio Antigo">
+            <img src="./img/Placa_Rancho_Marken.jpg" class="mini" onclick="cliqueModal(this)" alt="Placa Rancho Marken">
+        </article>
+        <article class="borda0 containerCursos" data-anima="direita">
+            <img src="./img/Roni_Catfish.jpg" class="mini" onclick="cliqueModal(this)" alt="Roni com Catfish">
+            <img src="./img/Roni_Tambaqui_Grande.jpg" class="mini" onclick="cliqueModal(this)" alt="Roni com Tambaqui Grande">
+            <img src="./img/Sede_Pitaya.jpg" class="mini" onclick="cliqueModal(this)" alt="Pitaya">
+            <img src="./img/Lagoa1.jpg" class="mini" onclick="cliqueModal(this)" alt="Lagoa 1">
+        </article>
+    </section>
+    <div id="janelaModal" class="janelaModal">
+        <span id="btnFechar" class="fecharModal">x</span>
+        <img id=""imgModal class="imgModal">
+        <div id="txtModal" class="txtModal" />
+    </div>
+</body>
+</html>
